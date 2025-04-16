@@ -29,7 +29,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /auth/register:
+ * /api/auth/register:
  *   post:
  *     summary: Register user baru
  *     tags: [Auth]
@@ -56,7 +56,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /auth/login:
+ * /api/auth/login:
  *   post:
  *     summary: Login dan dapatkan JWT Token
  *     tags: [Auth]

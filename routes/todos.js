@@ -32,7 +32,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /todos:
+ * /api/todos:
  *   get:
  *     summary: Ambil semua todo milik user
  *     tags: [Todos]
@@ -45,7 +45,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /todos:
+ * /api/todos:
  *   post:
  *     summary: Tambah todo baru
  *     tags: [Todos]
@@ -70,7 +70,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /todos/{id}:
+ * /api/todos/{id}:
  *   put:
  *     summary: Update todo berdasarkan ID
  *     tags: [Todos]
@@ -103,7 +103,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /todos/{id}:
+ * /api/todos/{id}:
  *   delete:
  *     summary: Hapus todo berdasarkan ID
  *     tags: [Todos]
