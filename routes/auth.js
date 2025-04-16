@@ -26,3 +26,66 @@ router.post("/login", async (request, respon) => {
 });
 
 module.exports = router;
+
+/**
+ * @swagger
+ * /auth/register:
+ *   post:
+ *     summary: Register user baru
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - username
+ *               - password
+ *             properties:
+ *               username:
+ *                 type: string
+ *                 example: rizqikevino
+ *               password:
+ *                 type: string
+ *                 example: rahasia123
+ *     responses:
+ *       201:
+ *         description: User berhasil didaftarkan
+ */
+
+/**
+ * @swagger
+ * /auth/login:
+ *   post:
+ *     summary: Login dan dapatkan JWT Token
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - username
+ *               - password
+ *             properties:
+ *               username:
+ *                 type: string
+ *                 example: rizqikevino
+ *               password:
+ *                 type: string
+ *                 example: rahasia123
+ *     responses:
+ *       200:
+ *         description: Login berhasil, JWT token dikembalikan
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 token:
+ *                   type: string
+ *                   example: eyJhbGciOiJIUzI1NiIsInR...
+ */
+
